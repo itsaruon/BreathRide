@@ -4,49 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/my_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/black">
 
-    </RelativeLayout>
+    <Button
+        android:id="@+id/emergencyBtn"
+        android:layout_width="300dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Emergency Contact"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:backgroundTint="#548B54"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/uberBtn"
         android:layout_width="300dp"
         android:layout_height="68dp"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginTop="325dp"
         android:fontFamily="sans-serif-black"
         android:text="Uber"
         android:textAllCaps="false"
         android:textSize="20dp"
         app:backgroundTint="#4B4B4B"
         app:cornerRadius="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/emergencyBtn"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="UnknownId" />
-    <Button
-        android:id="@+id/emergencyBtn"
-        android:layout_width="300dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginEnd="56dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Emergency Contact"
-        android:textAllCaps="false"
-        android:textSize="20dp"
-        app:backgroundTint="#4B4B4B"
-        app:cornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uberBtn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
