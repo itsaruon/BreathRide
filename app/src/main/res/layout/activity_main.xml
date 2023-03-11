@@ -6,13 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <RelativeLayout
+        android:id="@+id/my_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/uberBtn"
+        android:layout_width="300dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Uber"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:backgroundTint="#4B4B4B"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/emergencyBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="UnknownId" />
+    <Button
+        android:id="@+id/emergencyBtn"
+        android:layout_width="300dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Emergency Contact"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:backgroundTint="#4B4B4B"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uberBtn" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
