@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Breath_Ride"
         tools:targetApi="31">
         <activity
+            android:name=".SoberActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
