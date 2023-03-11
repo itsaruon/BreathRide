@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "289712297450",
+    "project_id": "breath-ride",
+    "storage_bucket": "breath-ride.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289712297450:android:73a3fbc3bd5795bca38e93",
+        "android_client_info": {
+          "package_name": "Breath.Ride"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289712297450-v851gfc62314olsbh3r9isnvcf5r6fsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRd7HONRkukEkTDp7eKJlASTZ0BX6lJi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289712297450-v851gfc62314olsbh3r9isnvcf5r6fsr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

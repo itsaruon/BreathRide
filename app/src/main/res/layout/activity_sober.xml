@@ -8,7 +8,7 @@
     tools:context=".SoberActivity">
 
     <TextView
-        android:id="@+id/txtLoginInfo"
+        android:id="@+id/soberMessage"
         android:layout_width="297dp"
         android:layout_height="93dp"
         android:layout_marginStart="57dp"
