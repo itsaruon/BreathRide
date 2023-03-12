@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Breath_Ride"
         tools:targetApi="31">
         <activity
-            android:name=".SoberActivity"
+            android:name=".SoberUp"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

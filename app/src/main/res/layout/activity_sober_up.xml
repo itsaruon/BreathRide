@@ -5,23 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".SoberActivity">
+    tools:context=".SoberUp">
 
     <TextView
-        android:id="@+id/soberMessage"
-        android:layout_width="297dp"
-        android:layout_height="93dp"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="292dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginBottom="346dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="You are good to drive"
+        android:id="@+id/display"
+        android:layout_width="300dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="sans-serif-black"
         android:textColor="#ffffff"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Sober - You're safe to drive!"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:backgroundTint="#548B54"
+        app:cornerRadius="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
