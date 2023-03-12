@@ -53,12 +53,11 @@ public class MainActivity extends AppCompatActivity {
                     } else if (value == 0) {
                         Intent intent = new Intent(MainActivity.this, DrunkUp.class);
                         startActivity(intent);
-
                 }
                // Log.d(TAG, "Value is: " + value);
             }
 
-            @Override
+          //  @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
@@ -71,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Write data to the database - TEST
-        databaseRef.setValue(1);
+        //databaseRef.setValue(0);
         /*
         Button uberBtn = findViewById(R.id.uberBtn);
         Button emergencyBtn = findViewById(R.id.emergencyBtn);
