@@ -9,14 +9,14 @@
 
     <TextView
         android:id="@+id/display"
-        android:layout_width="300dp"
+        android:layout_width="350dp"
         android:layout_height="68dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="300dp"
         android:fontFamily="sans-serif-black"
-        android:textColor="#ffffff"
         android:text="Sober - You're safe to drive!"
         android:textAllCaps="false"
+        android:textColor="#ffffff"
         android:textSize="25dp"
         app:backgroundTint="#548B54"
         app:cornerRadius="15dp"

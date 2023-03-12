@@ -45,19 +45,15 @@ public class MainActivity extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 Integer value = dataSnapshot.getValue(Integer.class);
-                for (int i = 0; i < 1; i++) {
                     // code to be executed
                     if (value == 1) {
                         // Display your screen here
                         Intent intent = new Intent(MainActivity.this, SoberUp.class);
                         startActivity(intent);
                     } else if (value == 0) {
-                        Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                        Intent intent = new Intent(MainActivity.this, DrunkUp.class);
                         startActivity(intent);
-                    }
-                    else {
-                        finish();
-                    }
+
                 }
                // Log.d(TAG, "Value is: " + value);
             }
@@ -76,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Write data to the database - TEST
         databaseRef.setValue(1);
-
+        /*
         Button uberBtn = findViewById(R.id.uberBtn);
         Button emergencyBtn = findViewById(R.id.emergencyBtn);
         uberBtn.setOnClickListener(new View.OnClickListener() {
@@ -100,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog dialog = builder.create();
                 dialog.show();
             }
-        });
+        });*/
     }
 
 }
