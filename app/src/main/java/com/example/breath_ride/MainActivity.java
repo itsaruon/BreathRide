@@ -2,7 +2,13 @@ package com.example.breath_ride;
 
 import static android.content.ContentValues.TAG;
 
+import androidx.appcompat.app.AlertDialog;
+import static android.content.ContentValues.TAG;
+
 import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -15,7 +21,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
-
 
 
     @Override
@@ -36,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
-                String value = dataSnapshot.getValue(String.class);
+                Integer value = dataSnapshot.getValue(Integer.class);
                 Log.d(TAG, "Value is: " + value);
             }
 
@@ -48,12 +53,33 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Write data to the database - TEST
-        databaseRef.setValue("Hello, World!");
+        databaseRef.setValue(0);
 
-        // Write a message to the database
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message");
 
-        myRef.setValue("Hello, World!");
+        Button uberBtn = findViewById(R.id.uberBtn);
+        Button emergencyBtn = findViewById(R.id.emergencyBtn);
+        uberBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            //Pop Up for Uber Request
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setMessage("Your Uber will arrive shortly")
+                        .setTitle("Uber Request");
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        });
+        emergencyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            //Pop Up for Emergency Contact
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setMessage("We texted your emergency contact")
+                        .setTitle("Emergency Contact Request");
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        });
     }
+
 }
