@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = new Intent(MainActivity.this, DrunkUp.class);
                         startActivity(intent);
                 }
-               // Log.d(TAG, "Value is: " + value);
+
             }
 
           //  @Override
